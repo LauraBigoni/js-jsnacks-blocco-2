@@ -14,3 +14,15 @@ Buon lavoro e a domani! */
 // Recupero gli elementi in pagina
 const snack = document.getElementById('snack4');
 
+// # WHILE
+// Creo un array
+const num = 10;
+const insieme = [];
+
+// Sommo gli elementi in posizione dispari
+let y = 0;
+while (0 < num) {
+    let randNum = Math.floor(Math.random() * 100) +1;
+    insieme.push(randNum);
+    y++;
+}

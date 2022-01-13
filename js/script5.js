@@ -15,7 +15,7 @@ Buon lavoro e a domani! */
 // Recupero gli elementi in pagina
 const snack = document.getElementById('snack5');
 
-// # WHILE
+// # DO WHILE
 // Creo due array
 const lista1 = [];
 const lista2 = [];
