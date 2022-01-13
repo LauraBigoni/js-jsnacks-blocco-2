@@ -15,7 +15,7 @@ Buon lavoro e a domani! */
 // * Recupero gli elementi in pagina
 const snack = document.getElementById('snack');
 
-// # WHILE
+// # IF/ELSE
 // * Chiedo all'utente di inserire un numero pari
 let number = parseInt(prompt('Inserisci un numero pari' , '4'));
 
