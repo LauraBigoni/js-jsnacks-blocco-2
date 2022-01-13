@@ -21,6 +21,7 @@ const lastNames = [' Imbimbo', ' Pitanza', ' Bettini', ' Nicodemo', ' Bigoni'];
 
 console.log(fakeInvites , firstNames , lastNames);
 
+// # WHILE
 // Creo un generatore casuale per pescare i nomi dagli array
 while (fakeInvites.length < 3) {
     const randNum1 = Math.floor(Math.random() * firstNames.length);
@@ -33,7 +34,7 @@ while (fakeInvites.length < 3) {
 
     // Aggiungo i risultati dei randomizzatori in una costante
     const fakePerson = `${firstName} ${lastName}`;
-    console.log(fakePerson);
+    console.log('fake person:' , fakePerson);
     
     // Controllo che se nel caso ci fossero nomi duplicati non vengano inseriti in lista
     if (!fakeInvites.includes(fakePerson)) {
@@ -41,7 +42,7 @@ while (fakeInvites.length < 3) {
     }
 }
 
-console.log(fakeInvites);
+console.table(fakeInvites);
 
 // Stampo in pagina
 snack.innerText = `Gli invitati di Gatsby sono: ${fakeInvites}`;
