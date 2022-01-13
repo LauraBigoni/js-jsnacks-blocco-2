@@ -12,7 +12,7 @@ Usare il DOM per raccogliere dati dagli utenti negli esercizi che lo richiedono!
 Buon lavoro e a domani! */
 
 // Recupero gli elementi in pagina
-const snack = document.getElementById('snack4');
+const snack = document.getElementById('snack');
 
 // # WHILE
 // * Creo un array
