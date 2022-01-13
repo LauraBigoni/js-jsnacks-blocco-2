@@ -15,5 +15,20 @@ Buon lavoro e a domani! */
 // * Recupero gli elementi in pagina
 const snack = document.getElementById('snack');
 
+// # WHILE
+// * Chiedo all'utente di inserire un numero pari
+let number = parseInt(prompt('Inserisci un numero pari' , '4'));
+
+let message = 'Ops, Avevi inserito un numero dispari, <br> perciò lo abbiamo cambiato per te.'
+
+if (number % 2 !== 0) {
+    number = number + 1;
+    message;
+    console.log(message);
+} else {
+    message = 'Bravo, hai inserito un numero pari';
+    console.log(message);
+}
+
 // * Stampo in pagina
-// snack.innerText = ``;
+snack.innerHTML = `Il numero pari è: ${number} <br> ${message}`;
