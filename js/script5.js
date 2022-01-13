@@ -12,11 +12,11 @@ Usare il DOM per raccogliere dati dagli utenti negli esercizi che lo richiedono!
 (quindi usare i tag input  e i button, invece dei prompt)
 Buon lavoro e a domani! */
 
-// Recupero gli elementi in pagina
+// * Recupero gli elementi in pagina
 const snack = document.getElementById('snack5');
 
 // # DO WHILE
-// Creo due array
+// * Creo due array
 const lista1 = [];
 const lista2 = [];
 
@@ -24,7 +24,7 @@ const itemLista1 = Math.floor(Math.random() * 10 );
 const itemLista2 = Math.floor(Math.random() * 10 );
 console.log(itemLista1 , itemLista2);
 
-// Randomizzo la lunghezza degli array
+// * Randomizzo la lunghezza degli array
 do {
     let num = Math.floor(Math.random() * 100 );
     lista1.push(num);
@@ -36,7 +36,7 @@ do {
 } while (lista2.length < itemLista2)
 console.log(lista1 ,lista2);
 
-// Calcolo la differenza
+// * Calcolo la differenza
 if (lista2.length > lista1.length ) {
 console.log('lista 1 più piccola');
 do {
@@ -60,5 +60,5 @@ console.log('lista 1 e 2 sono uguali');
 console.log(lista1);
 console.log(lista2);
 
-// Stampo in pagina
+// * Stampo in pagina
 snack.innerHTML = `Lista1: ${lista1} <br> Lista2: ${lista2}`;

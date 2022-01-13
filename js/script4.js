@@ -15,14 +15,26 @@ Buon lavoro e a domani! */
 const snack = document.getElementById('snack4');
 
 // # WHILE
-// Creo un array
+// * Creo un array
 const num = 10;
 const insieme = [];
+let sum = 0;
 
-// Sommo gli elementi in posizione dispari
+// * Sommo gli elementi in posizione dispari
 let y = 0;
-while (0 < num) {
+while (y < num) {
     let randNum = Math.floor(Math.random() * 100) +1;
     insieme.push(randNum);
     y++;
+    
+    // * Sommo gli elementi che sono in posizione dispari
+    if (y % 2 != 0) {
+    sum += randNum;
+    }
 }
+
+console.log(insieme)
+console.log(sum);
+
+// * Stampo in pagina
+snack.innerHTML = `I numeri sorteggiati sono: ${insieme} <br> La somma dei numeri in posizione dispari è: ${sum}`;

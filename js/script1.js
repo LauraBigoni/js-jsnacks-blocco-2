@@ -12,19 +12,8 @@ Usare il DOM per raccogliere dati dagli utenti negli esercizi che lo richiedono!
 (quindi usare i tag input  e i button, invece dei prompt)
 Buon lavoro e a domani! */
 
-// Recupero gli elementi in pagina
+// * Recupero gli elementi in pagina
 const snack = document.getElementById('snack1');
-
-// # FOR
-/*
-let sum = 0;
-for (let x = 0; x < 5; x++) {
-    const number = parseInt(prompt('Inserisci un numero' , '5'));
-    sum += number;
-    console.log(number);
-}
-console.log(sum);
-*/
 
 // # WHILE
 let x = 0;
@@ -37,5 +26,5 @@ while (x < 5) {
 }
 console.log(sum);
 
-// Stampo in pagina
+// * Stampo in pagina
 snack.innerText = `La somma dei numeri da te inseriti è: ${sum}`;
