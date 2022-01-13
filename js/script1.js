@@ -9,11 +9,21 @@ Stampare i risultati in pagina
 
 SUPER BONUS:
 Usare il DOM per raccogliere dati dagli utenti negli esercizi che lo richiedono!
-(quindi usare i tag input  e i button, invece dei prompt)
-Buon lavoro e a domani! */
+(quindi usare i tag input  e i button, invece dei prompt)*/
 
 // * Recupero gli elementi in pagina
 const snack = document.getElementById('snack');
+
+// # FOR
+/*
+let sum = 0;
+for (let x = 0; x < 5; x++) {
+    const number = parseInt(prompt('Inserisci un numero' , '5'));
+    sum += number;
+    console.log(number);
+}
+console.log(sum);
+*/
 
 // # WHILE
 let x = 0;
