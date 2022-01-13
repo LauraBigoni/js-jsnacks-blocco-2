@@ -25,41 +25,34 @@ const itemLista2 = Math.floor(Math.random() * 10 );
 console.log(itemLista1 , itemLista2);
 
 // Randomizzo la lunghezza degli array
-let x = 0;
-
 do {
     let num = Math.floor(Math.random() * 100 );
     lista1.push(num);
-    x++;
-} while (x < itemLista1.length);
+} while (lista1.length < itemLista1);
 
 do {
     let num = Math.floor(Math.random() * 100 );
     lista2.push(num);
-    x++;
-} while (x < itemLista2.length)
+} while (lista2.length < itemLista2)
+console.log(lista1 ,lista2);
 
 // Calcolo la differenza
-const diff = itemLista1 - itemLista2;
-console.log(diff);
-
-let i =0;
-let negativeDiff = Math.abs(diff) ;
-
-if (diff < 0 ) {
+if (lista2.length > lista1.length ) {
 console.log('lista 1 più piccola');
 do {
     let num = Math.floor(Math.random() * 100 );
     lista1.push(num);
-    i++;
-} while (i < negativeDiff);    
-} else if ( diff > 0 ) {
+} while (lista1.length < lista2.length); 
+
+
+} else if ( lista1.length > lista2.length ) {
 console.log('lista 2 più piccola');
 do {
     let num = Math.floor(Math.random() * 100 );
     lista2.push(num);
-    i++;
-} while (i < negativeDiff);
+} while (lista2.length < lista1.length);
+
+
 } else {
 console.log('lista 1 e 2 sono uguali');
 }
