@@ -16,6 +16,7 @@ Buon lavoro e a domani! */
 const snack = document.getElementById('snack1');
 
 // # FOR
+/*
 let sum = 0;
 for (let x = 0; x < 5; x++) {
     const number = parseInt(prompt('Inserisci un numero' , '5'));
@@ -23,10 +24,10 @@ for (let x = 0; x < 5; x++) {
     console.log(number);
 }
 console.log(sum);
-
+*/
 
 // # WHILE
-/* let x = 0;
+let x = 0;
 let sum = 0;
 while (x < 5) {
     const number = parseInt(prompt('Inserisci un numero' , '5'));
@@ -35,7 +36,6 @@ while (x < 5) {
     x++;
 }
 console.log(sum);
-*/
 
 // Stampo in pagina
 snack.innerText = `La somma dei numeri da te inseriti è: ${sum}`;
