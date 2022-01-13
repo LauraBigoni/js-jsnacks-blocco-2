@@ -19,7 +19,7 @@ const num = 10;
 const insieme = [];
 let sum = 0;
 
-// * Sommo gli elementi in posizione dispari
+// * Creo elementi randomici
 let y = 0;
 while (y < num) {
     let randNum = Math.floor(Math.random() * 100) +1;
